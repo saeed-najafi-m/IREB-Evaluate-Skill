@@ -1,0 +1,245 @@
+{
+ "run": "Cursor · Grok 4.6",
+ "answer": "eval/results/20261028-212614/cursor__cursor-grok-4.6-medium__r1/answer.md",
+ "recall": "9/9",
+ "recall_value": 1.0,
+ "missed": [],
+ "matches_expected": 8,
+ "matches_excluded_topic": 10,
+ "not_in_reference": 0,
+ "excluded_details": [
+  {
+   "id": "REQ 4",
+   "title": "Users can sort lists by chosen columns",
+   "topics": [
+    "EX 1 User-selectable sorting"
+   ]
+  },
+  {
+   "id": "REQ 7",
+   "title": "Relative period filters such as last week, this week, this month, and week or month backwards from now",
+   "topics": [
+    "EX 2 Relative date filters"
+   ]
+  },
+  {
+   "id": "REQ 9",
+   "title": "Users can change column order by dragging columns",
+   "topics": [
+    "EX 3 Reordering columns by drag and drop"
+   ]
+  },
+  {
+   "id": "REQ 10",
+   "title": "Users can create and save their own filter settings",
+   "topics": [
+    "EX 4 Creating and saving custom filters"
+   ]
+  },
+  {
+   "id": "REQ 11",
+   "title": "Users can share saved filters with colleagues",
+   "topics": [
+    "EX 5 Sharing filters"
+   ]
+  },
+  {
+   "id": "REQ 13",
+   "title": "Users can select many entries and delete them together",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 14",
+   "title": "Users can select several entries for form letters",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 15",
+   "title": "Keyboard tab navigation to select entries and delete quickly",
+   "topics": [
+    "EX 7 Keyboard-based operations"
+   ]
+  },
+  {
+   "id": "REQ 17",
+   "title": "Patient search suggests matching names as the user types",
+   "topics": [
+    "EX 8 Search suggestions and autocomplete"
+   ]
+  },
+  {
+   "id": "REQ 18",
+   "title": "A list entry opens its details with a single click",
+   "topics": [
+    "EX 9 Opening details with one click"
+   ]
+  }
+ ],
+ "not_in_reference_details": [],
+ "judge": {
+  "matches": [
+   {
+    "candidate_id": "REQ 1",
+    "covers": [
+     "REQ 1"
+    ],
+    "reason": "Same requirement: overviews should look similar across modules."
+   },
+   {
+    "candidate_id": "REQ 2",
+    "covers": [
+     "REQ 2"
+    ],
+    "reason": "Same requirement: consistent behaviour, with single or multi selection depending on the table."
+   },
+   {
+    "candidate_id": "REQ 3",
+    "covers": [
+     "REQ 3"
+    ],
+    "reason": "Same requirement: all data must be reachable without needing filters."
+   },
+   {
+    "candidate_id": "REQ 4",
+    "covers": [
+     "EX 1"
+    ],
+    "reason": "User-chosen sorting, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 5",
+    "covers": [
+     "REQ 4"
+    ],
+    "reason": "Same requirement: Excel export of table data."
+   },
+   {
+    "candidate_id": "REQ 6",
+    "covers": [
+     "REQ 5"
+    ],
+    "reason": "Same requirement: keep the start-date and end-date period filter."
+   },
+   {
+    "candidate_id": "REQ 7",
+    "covers": [
+     "EX 2"
+    ],
+    "reason": "Relative date filters, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 8",
+    "covers": [
+     "REQ 6"
+    ],
+    "reason": "Same requirement: remove unneeded columns, at least for this user."
+   },
+   {
+    "candidate_id": "REQ 9",
+    "covers": [
+     "EX 3"
+    ],
+    "reason": "Reordering columns by dragging, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 10",
+    "covers": [
+     "EX 4"
+    ],
+    "reason": "Creating and saving custom filters, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 11",
+    "covers": [
+     "EX 5"
+    ],
+    "reason": "Sharing filters with colleagues, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 12",
+    "covers": [
+     "REQ 7"
+    ],
+    "reason": "Same requirement: filter settings kept across logins."
+   },
+   {
+    "candidate_id": "REQ 13",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Selecting and deleting many entries at once, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 14",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Selecting several entries for form letters falls under the excluded bulk-selection topic."
+   },
+   {
+    "candidate_id": "REQ 15",
+    "covers": [
+     "EX 7"
+    ],
+    "reason": "Keyboard tab navigation to select and delete, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 16",
+    "covers": [
+     "REQ 8",
+     "REQ 9"
+    ],
+    "reason": "Patient search in the overview that matches first and last names together."
+   },
+   {
+    "candidate_id": "REQ 17",
+    "covers": [
+     "EX 8"
+    ],
+    "reason": "Search suggestions while typing, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 18",
+    "covers": [
+     "EX 9"
+    ],
+    "reason": "Opening details with one click, which the reference excluded."
+   }
+  ],
+  "not_covered": [],
+  "_judge": {
+   "model": "claude-opus-5-5",
+   "effort": "medium",
+   "model_usage": {
+    "claude-haiku-5-5": {
+     "input": 7464,
+     "output": 18
+    },
+    "claude-opus-5-5": {
+     "input": 2,
+     "output": 1128
+    }
+   }
+  }
+ },
+ "row": {
+  "run": "Cursor · Grok 4.6",
+  "effort": "medium",
+  "skill_loaded": "Yes",
+  "validator_run": "Yes",
+  "renderer_run": "Yes",
+  "schema_valid": "Yes",
+  "extracted": 18,
+  "stitched_quotes": 0,
+  "recall": "9/9",
+  "recall_value": 1.0,
+  "matches_expected": 8,
+  "matches_excluded_topic": 10,
+  "not_in_reference": 0,
+  "missed": "none"
+ }
+}

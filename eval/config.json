@@ -1,0 +1,19 @@
+{
+  "skill": "Skills/ireb-requirements-identifier",
+  "input": "Inputs/Interview_Listen en-US.md",
+  "input_name": "interview.md",
+  "prompt": "eval/prompts/default.txt",
+  "repeats": 1,
+  "timeout_s": 900,
+  "effort": {
+    "claude": "medium",
+    "cursor": "medium (part of the model ID)",
+    "vibe": "high"
+  },
+  "effort_note": "Mistral models accept only thinking 'high' or 'none', so Vibe uses 'high' as the only thinking-on option.",
+  "matrix": {
+    "claude": ["claude-sonnet-5-5", "claude-opus-5-5", "claude-haiku-5-5"],
+    "cursor": ["cursor-grok-4.6-medium"],
+    "vibe": ["mistral-medium-3.5", "mistral-large-4"]
+  }
+}

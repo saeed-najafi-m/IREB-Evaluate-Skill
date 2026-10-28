@@ -1,0 +1,231 @@
+{
+ "run": "Mistral Vibe · Mistral Large 4",
+ "answer": "eval/results/20261028-214025/vibe__mistral-large-4__r1/answer.md",
+ "recall": "8/9",
+ "recall_value": 0.889,
+ "missed": [
+  {
+   "id": "REQ 5",
+   "title": "Retention of start-date and end-date filtering",
+   "comment": "The candidates turned the date-filter passage into a relative-preset requirement. No candidate requires keeping the existing start/end date filter; the 'we still need that' quote only appears as context.",
+   "possible_reference_issue": true
+  }
+ ],
+ "matches_expected": 6,
+ "matches_excluded_topic": 9,
+ "not_in_reference": 0,
+ "excluded_details": [
+  {
+   "id": "REQ 3",
+   "title": "User-selectable sorting of lists by column",
+   "topics": [
+    "EX 1 User-selectable sorting"
+   ]
+  },
+  {
+   "id": "REQ 5",
+   "title": "Relative date filter presets (last week, this week, this month, and similar)",
+   "topics": [
+    "EX 2 Relative date filters"
+   ]
+  },
+  {
+   "id": "REQ 7",
+   "title": "User-configurable column order via drag and drop",
+   "topics": [
+    "EX 3 Reordering columns by drag and drop"
+   ]
+  },
+  {
+   "id": "REQ 8",
+   "title": "Saving custom filter settings for reuse",
+   "topics": [
+    "EX 4 Creating and saving custom filters"
+   ]
+  },
+  {
+   "id": "REQ 9",
+   "title": "Sharing saved filters with colleagues",
+   "topics": [
+    "EX 5 Sharing filters"
+   ]
+  },
+  {
+   "id": "REQ 11",
+   "title": "Selecting multiple entries for bulk actions such as delete and form letters",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 12",
+   "title": "Keyboard-based quick selection and deletion (tab navigation, keyboard shortcuts)",
+   "topics": [
+    "EX 7 Keyboard-based operations"
+   ]
+  },
+  {
+   "id": "REQ 14",
+   "title": "Search suggestions while typing",
+   "topics": [
+    "EX 8 Search suggestions and autocomplete"
+   ]
+  },
+  {
+   "id": "REQ 15",
+   "title": "Opening list entry details with a single click",
+   "topics": [
+    "EX 9 Opening details with one click"
+   ]
+  }
+ ],
+ "not_in_reference_details": [],
+ "judge": {
+  "matches": [
+   {
+    "candidate_id": "REQ 1",
+    "covers": [
+     "REQ 1",
+     "REQ 2"
+    ],
+    "reason": "Covers both the consistent look and the consistent behavior of tables, including allowed selection differences."
+   },
+   {
+    "candidate_id": "REQ 2",
+    "covers": [
+     "REQ 3"
+    ],
+    "reason": "All list and table data must be reachable without needing filters."
+   },
+   {
+    "candidate_id": "REQ 3",
+    "covers": [
+     "EX 1"
+    ],
+    "reason": "User-selectable sorting is an excluded topic."
+   },
+   {
+    "candidate_id": "REQ 4",
+    "covers": [
+     "REQ 4"
+    ],
+    "reason": "Same Excel export requirement."
+   },
+   {
+    "candidate_id": "REQ 5",
+    "covers": [
+     "EX 2"
+    ],
+    "reason": "Asks for relative date filter presets. Keeping the existing start/end date filter is only implied, not required."
+   },
+   {
+    "candidate_id": "REQ 6",
+    "covers": [
+     "REQ 6"
+    ],
+    "reason": "Unneeded columns removed at least for this user, per overview."
+   },
+   {
+    "candidate_id": "REQ 7",
+    "covers": [
+     "EX 3"
+    ],
+    "reason": "Reordering columns by drag and drop is excluded."
+   },
+   {
+    "candidate_id": "REQ 8",
+    "covers": [
+     "EX 4"
+    ],
+    "reason": "Saving custom filters is excluded."
+   },
+   {
+    "candidate_id": "REQ 9",
+    "covers": [
+     "EX 5"
+    ],
+    "reason": "Sharing filters is excluded."
+   },
+   {
+    "candidate_id": "REQ 10",
+    "covers": [
+     "REQ 7"
+    ],
+    "reason": "Filter settings kept across logins."
+   },
+   {
+    "candidate_id": "REQ 11",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Bulk selection and deletion is excluded."
+   },
+   {
+    "candidate_id": "REQ 12",
+    "covers": [
+     "EX 7"
+    ],
+    "reason": "Keyboard-based operations are excluded."
+   },
+   {
+    "candidate_id": "REQ 13",
+    "covers": [
+     "REQ 8",
+     "REQ 9"
+    ],
+    "reason": "Patient search in the overview, matching first and last names at the same time."
+   },
+   {
+    "candidate_id": "REQ 14",
+    "covers": [
+     "EX 8"
+    ],
+    "reason": "Search suggestions are excluded."
+   },
+   {
+    "candidate_id": "REQ 15",
+    "covers": [
+     "EX 9"
+    ],
+    "reason": "Opening details with one click is excluded."
+   }
+  ],
+  "not_covered": [
+   {
+    "reference_id": "REQ 5",
+    "comment": "The candidates turned the date-filter passage into a relative-preset requirement. No candidate requires keeping the existing start/end date filter; the 'we still need that' quote only appears as context.",
+    "possible_reference_issue": true
+   }
+  ],
+  "_judge": {
+   "model": "claude-opus-5-5",
+   "effort": "medium",
+   "model_usage": {
+    "claude-haiku-5-5": {
+     "input": 7144,
+     "output": 21
+    },
+    "claude-opus-5-5": {
+     "input": 2,
+     "output": 1103
+    }
+   }
+  }
+ },
+ "row": {
+  "run": "Mistral Vibe · Mistral Large 4",
+  "effort": "high",
+  "skill_loaded": "Yes",
+  "validator_run": "Yes",
+  "renderer_run": "Yes",
+  "schema_valid": "Yes",
+  "extracted": 15,
+  "stitched_quotes": 0,
+  "recall": "8/9",
+  "recall_value": 0.889,
+  "matches_expected": 6,
+  "matches_excluded_topic": 9,
+  "not_in_reference": 0,
+  "missed": "REQ 5"
+ }
+}

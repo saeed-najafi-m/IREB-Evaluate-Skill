@@ -1,0 +1,263 @@
+{
+ "run": "Claude Code · Haiku 5.5",
+ "answer": "eval/results/20261028-212614/claude__claude-haiku-5-5__r1/answer.md",
+ "recall": "9/9",
+ "recall_value": 1.0,
+ "missed": [],
+ "matches_expected": 9,
+ "matches_excluded_topic": 10,
+ "not_in_reference": 1,
+ "excluded_details": [
+  {
+   "id": "REQ 5",
+   "title": "Lists can be sorted by any column",
+   "topics": [
+    "EX 1 User-selectable sorting"
+   ]
+  },
+  {
+   "id": "REQ 8",
+   "title": "Quick relative period filters such as this week or last month",
+   "topics": [
+    "EX 2 Relative date filters"
+   ]
+  },
+  {
+   "id": "REQ 10",
+   "title": "Reorder columns by drag and drop",
+   "topics": [
+    "EX 3 Reordering columns by drag and drop"
+   ]
+  },
+  {
+   "id": "REQ 11",
+   "title": "Create and save custom filters for reuse",
+   "topics": [
+    "EX 4 Creating and saving custom filters"
+   ]
+  },
+  {
+   "id": "REQ 12",
+   "title": "Share saved filters with colleagues",
+   "topics": [
+    "EX 5 Sharing filters"
+   ]
+  },
+  {
+   "id": "REQ 14",
+   "title": "Select a large number of entries and delete them together",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 15",
+   "title": "Select multiple entries for form letters",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 17",
+   "title": "Keyboard navigation to select and delete entries",
+   "topics": [
+    "EX 7 Keyboard-based operations"
+   ]
+  },
+  {
+   "id": "REQ 19",
+   "title": "Name search suggestions while typing",
+   "topics": [
+    "EX 8 Search suggestions and autocomplete"
+   ]
+  },
+  {
+   "id": "REQ 20",
+   "title": "Open list entry details with a single click",
+   "topics": [
+    "EX 9 Opening details with one click"
+   ]
+  }
+ ],
+ "not_in_reference_details": [
+  {
+   "id": "REQ 16",
+   "title": "Delete individual entries",
+   "reason": "Misreads the source. Deleting single entries already works; the speaker wanted bulk deletion."
+  }
+ ],
+ "judge": {
+  "matches": [
+   {
+    "candidate_id": "REQ 1",
+    "covers": [
+     "REQ 1"
+    ],
+    "reason": "Same requirement: overviews should look alike across modules."
+   },
+   {
+    "candidate_id": "REQ 2",
+    "covers": [
+     "REQ 2"
+    ],
+    "reason": "Same requirement: tables should behave alike, with allowed differences."
+   },
+   {
+    "candidate_id": "REQ 3",
+    "covers": [
+     "REQ 2"
+    ],
+    "reason": "Single vs. multiple selection per table is the allowed exception within reference REQ 2's consistent-behavior rule."
+   },
+   {
+    "candidate_id": "REQ 4",
+    "covers": [
+     "REQ 3"
+    ],
+    "reason": "All data in lists should be reachable without filtering."
+   },
+   {
+    "candidate_id": "REQ 5",
+    "covers": [
+     "EX 1"
+    ],
+    "reason": "User-chosen sorting, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 6",
+    "covers": [
+     "REQ 4"
+    ],
+    "reason": "Excel export so data can be edited."
+   },
+   {
+    "candidate_id": "REQ 7",
+    "covers": [
+     "REQ 5"
+    ],
+    "reason": "Keep the start/end date period filter."
+   },
+   {
+    "candidate_id": "REQ 8",
+    "covers": [
+     "EX 2"
+    ],
+    "reason": "Relative date filters, which the reference excluded."
+   },
+   {
+    "candidate_id": "REQ 9",
+    "covers": [
+     "REQ 6"
+    ],
+    "reason": "Remove unneeded columns for the individual user."
+   },
+   {
+    "candidate_id": "REQ 10",
+    "covers": [
+     "EX 3"
+    ],
+    "reason": "Reorder columns by drag and drop (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 11",
+    "covers": [
+     "EX 4"
+    ],
+    "reason": "Create and save custom filters (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 12",
+    "covers": [
+     "EX 5"
+    ],
+    "reason": "Share filters with colleagues (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 13",
+    "covers": [
+     "REQ 7"
+    ],
+    "reason": "Filter settings persist across logins."
+   },
+   {
+    "candidate_id": "REQ 14",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Select many entries and delete them together (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 15",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Selecting several entries for form letters is part of the excluded bulk-selection topic."
+   },
+   {
+    "candidate_id": "REQ 16",
+    "covers": [],
+    "reason": "Misreads the source. Deleting single entries already works; the speaker wanted bulk deletion."
+   },
+   {
+    "candidate_id": "REQ 17",
+    "covers": [
+     "EX 7"
+    ],
+    "reason": "Keyboard-based selection and deletion (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 18",
+    "covers": [
+     "REQ 8",
+     "REQ 9"
+    ],
+    "reason": "Patient search in the overview, matching first and last names at the same time."
+   },
+   {
+    "candidate_id": "REQ 19",
+    "covers": [
+     "EX 8"
+    ],
+    "reason": "Search suggestions while typing (excluded topic)."
+   },
+   {
+    "candidate_id": "REQ 20",
+    "covers": [
+     "EX 9"
+    ],
+    "reason": "Open details with one click (excluded topic)."
+   }
+  ],
+  "not_covered": [],
+  "_judge": {
+   "model": "claude-opus-5-5",
+   "effort": "medium",
+   "model_usage": {
+    "claude-haiku-5-5": {
+     "input": 7016,
+     "output": 18
+    },
+    "claude-opus-5-5": {
+     "input": 2,
+     "output": 1514
+    }
+   }
+  }
+ },
+ "row": {
+  "run": "Claude Code · Haiku 5.5",
+  "effort": "medium",
+  "skill_loaded": "Yes",
+  "validator_run": "Yes",
+  "renderer_run": "Yes",
+  "schema_valid": "Yes",
+  "extracted": 20,
+  "stitched_quotes": 0,
+  "recall": "9/9",
+  "recall_value": 1.0,
+  "matches_expected": 9,
+  "matches_excluded_topic": 10,
+  "not_in_reference": 1,
+  "missed": "none"
+ }
+}

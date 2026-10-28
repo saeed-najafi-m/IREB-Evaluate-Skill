@@ -1,0 +1,9 @@
+run,effort,skill_loaded,validator_run,renderer_run,schema_valid,extracted,stitched_quotes,recall,recall_value,matches_expected,matches_excluded_topic,not_in_reference,missed
+Claude Code · Haiku 5.5,medium,Yes,Yes,Yes,Yes,20,0,9/9,1.0,9,10,1,none
+Claude Code · Opus 5.5,medium,Yes,Yes,Yes,Yes,19,0,9/9,1.0,9,10,0,none
+Claude Code · Sonnet 5.5,medium,Yes,Yes,Yes,Yes,19,4,9/9,1.0,8,10,1,none
+Cursor · Grok 4.6,medium,Yes,Yes,Yes,Yes,18,0,9/9,1.0,8,10,0,none
+Mistral Vibe · Mistral Medium 3.5,high,Yes,Yes,Yes,Yes,16,0,8/9,0.889,7,9,0,REQ 5
+Mistral Vibe · Mistral Large 4,high,Yes,Yes,Yes,Yes,15,0,8/9,0.889,6,9,0,REQ 5
+Web app export · Claude Opus,not reported,"n/a (web app export, no tool log)","n/a (web app export, no tool log)","n/a (web app export, no tool log)",Yes,19,0,9/9,1.0,9,10,0,none
+Web app export · Gemini Argon,not reported,"n/a (web app export, no tool log)","n/a (web app export, no tool log)","n/a (web app export, no tool log)",Yes,18,0,9/9,1.0,7,10,1,none

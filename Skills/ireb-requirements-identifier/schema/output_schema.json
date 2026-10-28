@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "OrginalStatement": {
+      "additionalProperties": false,
+      "properties": {
+        "statement": {
+          "title": "Statement",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "statement",
+        "source"
+      ],
+      "title": "OrginalStatement",
+      "type": "object"
+    },
+    "OriginalRequirementModel": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "statements": {
+          "items": {
+            "$ref": "#/$defs/OrginalStatement"
+          },
+          "title": "Statements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "statements"
+      ],
+      "title": "OriginalRequirementModel",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "original_requirements": {
+      "items": {
+        "$ref": "#/$defs/OriginalRequirementModel"
+      },
+      "title": "Original Requirements",
+      "type": "array"
+    }
+  },
+  "required": [
+    "original_requirements"
+  ],
+  "title": "OriginalRequirementListModel",
+  "type": "object"
+}

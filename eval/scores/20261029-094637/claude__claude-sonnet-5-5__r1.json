@@ -1,0 +1,256 @@
+{
+ "run": "Claude Code · Sonnet 5.5",
+ "answer": "eval/results/20261028-212614/claude__claude-sonnet-5-5__r1/answer.md",
+ "recall": "9/9",
+ "recall_value": 1.0,
+ "missed": [],
+ "matches_expected": 8,
+ "matches_excluded_topic": 10,
+ "not_in_reference": 1,
+ "excluded_details": [
+  {
+   "id": "REQ 5",
+   "title": "User-selectable sorting of lists",
+   "topics": [
+    "EX 1 User-selectable sorting"
+   ]
+  },
+  {
+   "id": "REQ 8",
+   "title": "Predefined relative period filters",
+   "topics": [
+    "EX 2 Relative date filters"
+   ]
+  },
+  {
+   "id": "REQ 10",
+   "title": "Changeable column order via drag and drop",
+   "topics": [
+    "EX 3 Reordering columns by drag and drop"
+   ]
+  },
+  {
+   "id": "REQ 11",
+   "title": "Saving of custom filter settings",
+   "topics": [
+    "EX 4 Creating and saving custom filters"
+   ]
+  },
+  {
+   "id": "REQ 12",
+   "title": "Sharing of saved filters with colleagues",
+   "topics": [
+    "EX 5 Sharing filters"
+   ]
+  },
+  {
+   "id": "REQ 14",
+   "title": "Deletion of multiple selected entries at once",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 15",
+   "title": "Selection of multiple entries for form letters",
+   "topics": [
+    "EX 6 Bulk selection and deletion"
+   ]
+  },
+  {
+   "id": "REQ 16",
+   "title": "Keyboard operation for selecting and deleting entries",
+   "topics": [
+    "EX 7 Keyboard-based operations"
+   ]
+  },
+  {
+   "id": "REQ 18",
+   "title": "Name suggestions while typing in patient search",
+   "topics": [
+    "EX 8 Search suggestions and autocomplete"
+   ]
+  },
+  {
+   "id": "REQ 19",
+   "title": "Open list entry details with a single click",
+   "topics": [
+    "EX 9 Opening details with one click"
+   ]
+  }
+ ],
+ "not_in_reference_details": [
+  {
+   "id": "REQ 3",
+   "title": "Selection mode adapted per table (single vs. multiple)",
+   "reason": "Covers only the single vs. multiple selection exception, not REQ 2's core of consistent behavior; matches no excluded topic."
+  }
+ ],
+ "judge": {
+  "matches": [
+   {
+    "candidate_id": "REQ 1",
+    "covers": [
+     "REQ 1"
+    ],
+    "reason": "Same obligation: overviews should look consistent, so it feels like the same application."
+   },
+   {
+    "candidate_id": "REQ 2",
+    "covers": [
+     "REQ 2"
+    ],
+    "reason": "Same obligation: tables should behave the same way."
+   },
+   {
+    "candidate_id": "REQ 3",
+    "covers": [],
+    "reason": "Covers only the single vs. multiple selection exception, not REQ 2's core of consistent behavior; matches no excluded topic."
+   },
+   {
+    "candidate_id": "REQ 4",
+    "covers": [
+     "REQ 3"
+    ],
+    "reason": "Same need: all list data must be reachable, not only after filtering."
+   },
+   {
+    "candidate_id": "REQ 5",
+    "covers": [
+     "EX 1"
+    ],
+    "reason": "User-selectable sorting is excluded topic EX 1."
+   },
+   {
+    "candidate_id": "REQ 6",
+    "covers": [
+     "REQ 4"
+    ],
+    "reason": "Same Excel export requirement."
+   },
+   {
+    "candidate_id": "REQ 7",
+    "covers": [
+     "REQ 5"
+    ],
+    "reason": "Same: keep the start and end date filter."
+   },
+   {
+    "candidate_id": "REQ 8",
+    "covers": [
+     "EX 2"
+    ],
+    "reason": "Relative date filters are excluded topic EX 2."
+   },
+   {
+    "candidate_id": "REQ 9",
+    "covers": [
+     "REQ 6"
+    ],
+    "reason": "Same: remove unneeded columns for the individual user."
+   },
+   {
+    "candidate_id": "REQ 10",
+    "covers": [
+     "EX 3"
+    ],
+    "reason": "Reordering columns by drag and drop is excluded topic EX 3."
+   },
+   {
+    "candidate_id": "REQ 11",
+    "covers": [
+     "EX 4"
+    ],
+    "reason": "Creating and saving custom filters is excluded topic EX 4."
+   },
+   {
+    "candidate_id": "REQ 12",
+    "covers": [
+     "EX 5"
+    ],
+    "reason": "Sharing filters is excluded topic EX 5."
+   },
+   {
+    "candidate_id": "REQ 13",
+    "covers": [
+     "REQ 7"
+    ],
+    "reason": "Same: filter settings kept across logins."
+   },
+   {
+    "candidate_id": "REQ 14",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Bulk selection and deletion is excluded topic EX 6."
+   },
+   {
+    "candidate_id": "REQ 15",
+    "covers": [
+     "EX 6"
+    ],
+    "reason": "Selecting multiple entries for form letters falls under the bulk-selection topic EX 6."
+   },
+   {
+    "candidate_id": "REQ 16",
+    "covers": [
+     "EX 7"
+    ],
+    "reason": "Keyboard-based operation is excluded topic EX 7."
+   },
+   {
+    "candidate_id": "REQ 17",
+    "covers": [
+     "REQ 8",
+     "REQ 9"
+    ],
+    "reason": "Patient search in the overview, searching first and last names at the same time."
+   },
+   {
+    "candidate_id": "REQ 18",
+    "covers": [
+     "EX 8"
+    ],
+    "reason": "Search suggestions are excluded topic EX 8."
+   },
+   {
+    "candidate_id": "REQ 19",
+    "covers": [
+     "EX 9"
+    ],
+    "reason": "Opening details with one click is excluded topic EX 9."
+   }
+  ],
+  "not_covered": [],
+  "_judge": {
+   "model": "claude-opus-5-5",
+   "effort": "medium",
+   "model_usage": {
+    "claude-haiku-5-5": {
+     "input": 6874,
+     "output": 20
+    },
+    "claude-opus-5-5": {
+     "input": 2,
+     "output": 1259
+    }
+   }
+  }
+ },
+ "row": {
+  "run": "Claude Code · Sonnet 5.5",
+  "effort": "medium",
+  "skill_loaded": "Yes",
+  "validator_run": "Yes",
+  "renderer_run": "Yes",
+  "schema_valid": "Yes",
+  "extracted": 19,
+  "stitched_quotes": 4,
+  "recall": "9/9",
+  "recall_value": 1.0,
+  "matches_expected": 8,
+  "matches_excluded_topic": 10,
+  "not_in_reference": 1,
+  "missed": "none"
+ }
+}

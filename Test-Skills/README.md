@@ -25,6 +25,7 @@ Test-Skills/
 ## Tests
 
 Prompt and run setup for Summarize Domain: [Summarize-Domain/prompt.md](Summarize-Domain/prompt.md).
+Prompts for Prepare Interview Script: [exploratory interview](Prepare-Interview-Script/ireb-exploratory-interview/prompt.md), [goal confirmation](Prepare-Interview-Script/ireb-goal-confirmation-interview/prompt.md).
 
 | Use case | Skill | Example | Model / harness | Date | Verdict |
 |---|---|---|---|---|---|
@@ -33,3 +34,5 @@ Prompt and run setup for Summarize Domain: [Summarize-Domain/prompt.md](Summariz
 | Summarize Domain | [ireb-domain-overview](Summarize-Domain/ireb-domain-overview) | GOV.UK Notify (web search, no documents) | Opus 5.5, Claude Code CLI | 2026-11-08 | to review |
 | Summarize Domain | [ireb-regulations-and-standards](Summarize-Domain/ireb-regulations-and-standards) | GOV.UK Notify (web search, no documents) | Opus 5.5, Claude Code CLI | 2026-11-08 | to review |
 | Summarize Domain | [ireb-system-context](Summarize-Domain/ireb-system-context) | GOV.UK Notify (web search, no documents) | Opus 5.5, Claude Code CLI | 2026-11-08 | to review |
+| Prepare Interview Script | [ireb-exploratory-interview](Prepare-Interview-Script/ireb-exploratory-interview) | NIHR loneliness support, frontline staff, 45 min | Opus 5.5, Claude Code CLI | 2026-11-12 | to review |
+| Prepare Interview Script | [ireb-goal-confirmation-interview](Prepare-Interview-Script/ireb-goal-confirmation-interview) | GOV.UK Verify, 3 business-case goals, 60 min | Opus 5.5, Claude Code CLI | 2026-11-12 | to review |

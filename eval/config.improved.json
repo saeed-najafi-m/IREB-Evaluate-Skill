@@ -1,0 +1,19 @@
+{
+  "skill": "Skills/SKILL-ireb-requirements-identifier/Improved_Version/ireb-requirements-identifier-improved",
+  "input": "Inputs/Interview_Listen en-US.md",
+  "input_name": "interview.md",
+  "prompt": "eval/prompts/default.txt",
+  "repeats": 1,
+  "timeout_s": 900,
+  "effort": {
+    "claude": "medium"
+  },
+  "matrix": {
+    "claude": [
+      "claude-sonnet-5-5",
+      "claude-opus-5-5",
+      "claude-haiku-5-5"
+    ]
+  },
+  "label": "improved"
+}

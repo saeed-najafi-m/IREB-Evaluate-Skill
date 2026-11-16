@@ -1,0 +1,7 @@
+run,skill,effort,skill_loaded,validator_run,renderer_run,schema_valid,extracted,stitched_quotes,recall,recall_value,matches_expected,matches_excluded_topic,not_in_reference,missed
+Claude Code · Sonnet 5.5,ireb-requirements-identifier,medium,Yes,Yes,Yes,Yes,19,4,9/9,1.0,8,10,1,none
+Claude Code · Opus 5.5,ireb-requirements-identifier,medium,Yes,Yes,Yes,Yes,19,0,9/9,1.0,9,10,0,none
+Claude Code · Haiku 5.5,ireb-requirements-identifier,medium,Yes,Yes,Yes,Yes,20,0,9/9,1.0,9,10,1,none
+Claude Code · Haiku 5.5,ireb-requirements-identifier-improved,medium,Yes,Yes,Yes,Yes,18,0,9/9,1.0,8,10,0,none
+Claude Code · Opus 5.5,ireb-requirements-identifier-improved,medium,Yes,Yes,Yes,Yes,18,0,9/9,1.0,8,9,1,none
+Claude Code · Sonnet 5.5,ireb-requirements-identifier-improved,medium,Yes,Yes,Yes,Yes,18,2,9/9,1.0,8,10,0,none

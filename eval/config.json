@@ -1,5 +1,5 @@
 {
-  "skill": "Skills/ireb-requirements-identifier",
+  "skill": "Skills/SKILL-ireb-requirements-identifier/ireb-requirements-identifier",
   "input": "Inputs/Interview_Listen en-US.md",
   "input_name": "interview.md",
   "prompt": "eval/prompts/default.txt",

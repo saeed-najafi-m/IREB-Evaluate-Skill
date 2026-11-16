@@ -26,6 +26,7 @@ Test-Skills/
 
 Prompt and run setup for Summarize Domain: [Summarize-Domain/prompt.md](Summarize-Domain/prompt.md).
 Prompts for Prepare Interview Script: [exploratory interview](Prepare-Interview-Script/ireb-exploratory-interview/prompt.md), [goal confirmation](Prepare-Interview-Script/ireb-goal-confirmation-interview/prompt.md).
+Prompt for Identify Requirements (original and improved skill): [Identify-Requirements/ireb-requirements-identifier/prompt.md](Identify-Requirements/ireb-requirements-identifier/prompt.md).
 
 | Use case | Skill | Example | Model / harness | Date | Verdict |
 |---|---|---|---|---|---|
@@ -36,3 +37,5 @@ Prompts for Prepare Interview Script: [exploratory interview](Prepare-Interview-
 | Summarize Domain | [ireb-system-context](Summarize-Domain/ireb-system-context) | GOV.UK Notify (web search, no documents) | Opus 5.5, Claude Code CLI | 2026-11-08 | to review |
 | Prepare Interview Script | [ireb-exploratory-interview](Prepare-Interview-Script/ireb-exploratory-interview) | NIHR loneliness support, frontline staff, 45 min | Opus 5.5, Claude Code CLI | 2026-11-12 | to review |
 | Prepare Interview Script | [ireb-goal-confirmation-interview](Prepare-Interview-Script/ireb-goal-confirmation-interview) | GOV.UK Verify, 3 business-case goals, 60 min | Opus 5.5, Claude Code CLI | 2026-11-12 | to review |
+| Identify Requirements | [ireb-requirements-identifier](Identify-Requirements/ireb-requirements-identifier/output.md) (original) | AI4RE interview on lists and tables | Opus 5.5, Claude Code CLI | 2026-11-16 | to review |
+| Identify Requirements | [ireb-requirements-identifier-improved](Identify-Requirements/ireb-requirements-identifier/output-improved.md) | AI4RE interview on lists and tables | Opus 5.5, Claude Code CLI | 2026-11-16 | to review |

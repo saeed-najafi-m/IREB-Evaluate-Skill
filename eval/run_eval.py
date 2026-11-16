@@ -259,7 +259,10 @@ def main():
     elif args.model:
         sys.exit("--model requires --harness")
 
-    batch_dir = EVAL / "results" / dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    batch_name = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    if cfg.get("label"):
+        batch_name += f"-{cfg['label']}"
+    batch_dir = EVAL / "results" / batch_name
     for harness, models in matrix.items():
         for model in models:
             for rep in range(1, repeats + 1):

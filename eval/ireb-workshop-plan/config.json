@@ -1,0 +1,11 @@
+{
+  "skill": "Skills/SKILLS-Plan a Workshop/ireb-workshop-plan-v1.1.0/ireb-workshop-plan",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "simulator_model": "claude-opus-5-5",
+  "simulator_effort": "medium",
+  "max_turns": 4,
+  "timeout_s": 900,
+  "done_file": "workshop-plan.md",
+  "done_marker": "## Agenda"
+}

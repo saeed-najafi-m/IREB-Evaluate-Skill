@@ -35,6 +35,16 @@ python eval/score.py --no-judge eval/results              # without the LLM judg
 
 Requires Python 3 and the CLIs being tested (`claude`, `cursor-agent`, `vibe`). The judge uses `claude`.
 
+## Multi-turn runs
+
+`eval/run_multiturn.py` runs a skill as a conversation (Claude Code only). If the skill asks a question, a second Claude session plays the user: it answers only what was asked, from the scenario's user card, and the answer goes back into the same skill session. Each skill has its own folder `eval/<skill>/` with `config.json`, `scenarios/<name>/opening.md` and `user.md`, and `results/`. The files at the top level of `eval/` belong to `ireb-requirements-identifier`.
+
+```
+python eval/run_multiturn.py eval/ireb-workshop-plan                       # all scenarios
+python eval/run_multiturn.py eval/ireb-workshop-plan --scenario 3-onsite-full-day
+python eval/run_multiturn.py eval/ireb-workshop-plan --dry-run             # print commands only
+```
+
 ## Repository map
 
 ```
@@ -50,6 +60,8 @@ eval/
   prompts/default.txt            prompt used for every run
   run_eval.py                    runs the skill in each harness
   score.py                       checks, LLM judge and report
+  run_multiturn.py               multi-turn runs with a simulated user
+  ireb-workshop-plan/            config.json, scenarios/<name>/, results/<batch>/<name>/transcript.md
   reference_issues.md            observations on the reference, included in the report
   results/<batch>/<run>/         answer.md per CLI run
   results/WebBased/              answers exported from web apps

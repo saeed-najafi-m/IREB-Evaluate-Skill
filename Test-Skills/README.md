@@ -27,6 +27,7 @@ Test-Skills/
 Prompt and run setup for Summarize Domain: [Summarize-Domain/prompt.md](Summarize-Domain/prompt.md).
 Prompts for Prepare Interview Script: [exploratory interview](Prepare-Interview-Script/ireb-exploratory-interview/prompt.md), [goal confirmation](Prepare-Interview-Script/ireb-goal-confirmation-interview/prompt.md).
 Prompt for Identify Requirements (original and improved skill): [Identify-Requirements/ireb-requirements-identifier/prompt.md](Identify-Requirements/ireb-requirements-identifier/prompt.md).
+Prompts for the Plan a Workshop retest (skill v1.1.0): [1 complete brief, remote 90 min](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/1-ami-remote-90min/prompt.md), [2 without duration and setting](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/2-missing-duration-setting/prompt.md), [3 on-site, 6 hours](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/3-onsite-full-day/prompt.md).
 
 | Use case | Skill | Example | Model / harness | Date | Verdict |
 |---|---|---|---|---|---|
@@ -39,3 +40,6 @@ Prompt for Identify Requirements (original and improved skill): [Identify-Requir
 | Prepare Interview Script | [ireb-goal-confirmation-interview](Prepare-Interview-Script/ireb-goal-confirmation-interview) | GOV.UK Verify, 3 business-case goals, 60 min | Opus 5.5, Claude Code CLI | 2026-11-12 | to review |
 | Identify Requirements | [ireb-requirements-identifier](Identify-Requirements/ireb-requirements-identifier/output.md) (original) | AI4RE interview on lists and tables | Opus 5.5, Claude Code CLI | 2026-11-16 | to review |
 | Identify Requirements | [ireb-requirements-identifier-improved](Identify-Requirements/ireb-requirements-identifier/output-improved.md) | AI4RE interview on lists and tables | Opus 5.5, Claude Code CLI | 2026-11-16 | to review |
+| Plan a Workshop | [ireb-workshop-plan v1.1.0](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/1-ami-remote-90min) | AMI remote control, complete brief, remote, 90 min | Opus 5.5, Claude Code CLI, multi-turn (simulated user: Opus 5.5) | 2026-11-18 | to review |
+| Plan a Workshop | [ireb-workshop-plan v1.1.0](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/2-missing-duration-setting) | AMI remote control, brief without duration and setting | Opus 5.5, Claude Code CLI, multi-turn (simulated user: Opus 5.5) | 2026-11-18 | to review |
+| Plan a Workshop | [ireb-workshop-plan v1.1.0](Plan%20a%20Workshop/ireb-workshop-plan-v1.1.0/3-onsite-full-day) | AMI remote control, complete brief, on-site, 6 hours | Opus 5.5, Claude Code CLI, multi-turn (simulated user: Opus 5.5) | 2026-11-18 | to review |

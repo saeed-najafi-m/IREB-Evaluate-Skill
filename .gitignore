@@ -8,6 +8,8 @@ eval/results/**/vibe_export/
 eval/results/**/transcript.jsonl
 eval/results/**/meta.json
 eval/results/**/stderr.txt
+eval/*/results/**/*.jsonl
+eval/*/results/**/meta.json
 
 # Original Word input: its document properties name the author.
 # The evaluation uses the converted Inputs/Interview_Listen en-US.md.

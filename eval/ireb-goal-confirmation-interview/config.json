@@ -1,0 +1,11 @@
+{
+  "skill": "Skills/SKILLS-Prepare-Interview-Script/ireb-goal-confirmation-interview-v1.1.0/ireb-goal-confirmation-interview",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "simulator_model": "claude-opus-5-5",
+  "simulator_effort": "medium",
+  "max_turns": 4,
+  "timeout_s": 900,
+  "done_file": "goal-confirmation-interview-script.md",
+  "done_marker": "## Completion Criteria"
+}

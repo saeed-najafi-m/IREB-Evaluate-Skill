@@ -62,6 +62,8 @@ eval/
   score.py                       checks, LLM judge and report
   run_multiturn.py               multi-turn runs with a simulated user
   ireb-workshop-plan/            config.json, scenarios/<name>/, results/<batch>/<name>/transcript.md
+  ireb-exploratory-interview/    same layout
+  ireb-goal-confirmation-interview/  same layout
   reference_issues.md            observations on the reference, included in the report
   results/<batch>/<run>/         answer.md per CLI run
   results/WebBased/              answers exported from web apps
